@@ -3,6 +3,7 @@ import { StyleSheet, View, Image, TextInput, TouchableOpacity, Text, Alert, Link
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MapView, { Marker } from "react-native-maps";
 import * as Location from 'expo-location';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -98,7 +99,17 @@ export default function Home() {
 }
 
 // Componente de mapa normal
-function Normal({ origin, destination }) {
+function Normal({ origin, destination, handleSearch }) {
+  const [destinationInput, setDestinationInput] = useState("");
+
+  const searchDestination = () => {
+    if (destinationInput.trim() !== "") {
+      handleSearch(destinationInput);
+    } else {
+      Alert.alert("Por favor ingresa un destino válido");
+    }
+  };
+
   return (
     <View style={styles.container}>
       <MapView
@@ -113,12 +124,40 @@ function Normal({ origin, destination }) {
         {origin && <Marker coordinate={origin} title="Origen" />}
         {destination && <Marker coordinate={destination} title="Destino" />}
       </MapView>
+      <View style={styles.inputContainer}>
+        <View style={styles.inputWrapper}>
+          <Text style={styles.inputLabel}>Destino</Text>
+          <View style={styles.inputContent}>
+            <Icon name="search" size={20} color="#6C3895" style={styles.icon} />
+            <TextInput
+              style={styles.input}
+              placeholder="Buscar destino..."
+              value={destinationInput}
+              onChangeText={setDestinationInput}
+              placeholderTextColor="#C7A5E2"
+            />
+          </View>
+        </View>
+      </View>
+      <TouchableOpacity style={styles.floatingButton} onPress={searchDestination}>
+        <Text style={styles.buttonText}>Buscar</Text>
+      </TouchableOpacity>
     </View>
   );
 }
 
 // Lo mismo pero para especial
-function Especial({ origin, destination }) {
+function Especial({ origin, destination, handleSearch }) {
+  const [destinationInput, setDestinationInput] = useState("");
+
+  const searchDestination = () => {
+    if (destinationInput.trim() !== "") {
+      handleSearch(destinationInput);
+    } else {
+      Alert.alert("Por favor ingresa un destino válido");
+    }
+  };
+
   return (
     <View style={styles.container}>
       <MapView
@@ -133,43 +172,83 @@ function Especial({ origin, destination }) {
         {origin && <Marker coordinate={origin} title="Origen" />}
         {destination && <Marker coordinate={destination} title="Destino" />}
       </MapView>
+      <View style={styles.inputContainer}>
+      <View style={styles.inputWrapper}>
+        <Text style={styles.inputLabel}>Adonde quieres ir</Text>
+        <View style={styles.inputContent}>
+          <Icon name="search" size={20} color="#6C3895" style={styles.icon} />
+          <TextInput
+            style={styles.input}
+            placeholder="Buscar destino..."
+            value={destinationInput}
+            onChangeText={setDestinationInput}
+            placeholderTextColor="#C7A5E2"
+          />
+        </View>
+      </View>
+      </View>
+      <TouchableOpacity style={styles.floatingButton} onPress={searchDestination}>
+        <Icon name="search" size={20} color="#fff" />
+      </TouchableOpacity>
     </View>
   );
 }
 
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  map: {
-    flex: 1,
-  },
-  searchContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 10,
-    backgroundColor: "#fff",
-    elevation: 4,
-  },
-  input: {
-    flex: 1,
-    height: 40,
-    borderColor: "#ccc",
-    borderWidth: 1,
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginRight: 10,
-  },
-  button: {
-    backgroundColor: "#6C3895",
-    borderRadius: 5,
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-  },
-  buttonText: {
-    color: "#fff",
-    fontWeight: "bold",
-  },
+container: {
+  flex: 1,
+},
+map: {
+  flex: 1,
+},
+inputContainer: {
+  position: 'absolute',
+  top: 16,
+  left: 30,
+  right: 36,
+  zIndex: 1,
+  width:350,
+},
+inputWrapper: {
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  backgroundColor: 'white',
+  borderRadius: 10,
+  paddingHorizontal: 10,
+  paddingVertical: 5,
+  borderColor: '#6C3895',
+  borderWidth: 1,
+},
+inputContent: {
+  flexDirection: 'row',
+  alignItems: 'center',
+},
+inputLabel: {
+  color: '#6C3895',
+  marginBottom: 5,
+},
+input: {
+  height: 20,
+  color: '#C7A5E2',
+  flex: 1,
+  marginLeft: 10, 
+},
+floatingButton: {
+  position: 'absolute',
+  bottom: 16,
+  right: 16,
+  backgroundColor: "#C7A5E2",
+  borderRadius: 60,
+  width: 120,
+  height: 120,
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderLeftWidth: 5, 
+  borderColor: '#6C3895', 
+},
+
+buttonText: {
+  color: "#6C3895",
+  fontWeight: "bold",
+}
 });
