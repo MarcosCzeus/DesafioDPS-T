@@ -8,6 +8,12 @@ Documento:
 
 [Proyecto DPS.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/14737051/Proyecto.DPS.pdf)
 
+Manual Usuarios:[SafeRide Manual Usuario.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215047/SafeRide.Manual.Usuario.pdf)
+
+
+Manual Tecnico:[Manual Tecnico.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215046/Manual.Tecnico.pdf)
+
+
 Integrantes:
 
 Ashley Nicole Aguilar Ramírez AR232346
@@ -15,8 +21,6 @@ Ashley Nicole Aguilar Ramírez AR232346
 Marcos Ceseus Medina Velásquez MV232358
 
 Lilian Alejandra Montoya Mazariego MM232145
-
-Jorge Enrique Panameño Pubil PP232243
 
 Marcelo Gabriel Rosales Torres RT232285
 
