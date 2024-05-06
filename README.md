@@ -11,7 +11,7 @@ Documento:
 Manual Usuarios:[SafeRide Manual Usuario.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215047/SafeRide.Manual.Usuario.pdf)
 
 
-Manual Tecnico:[Manual Tecnico.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215046/Manual.Tecnico.pdf)
+Manual Tecnico:[Manual Tecnico-1.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215647/Manual.Tecnico-1.pdf)
 
 
 Integrantes:
