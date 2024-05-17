@@ -11,7 +11,8 @@ Documento:
 Manual Usuarios:[Manual de Usuario.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15314819/Manual.de.Usuario.pdf)
 
 
-Manual Tecnico:[Manual Tecnico-1.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215647/Manual.Tecnico-1.pdf)
+Manual Tecnico:[Manual Tecnico.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15344633/Manual.Tecnico.pdf)
+
 
 
 Integrantes:
