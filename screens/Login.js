@@ -7,7 +7,7 @@ import { firebaseConfig } from '../screens/firebase-config';
 import { useNavigation } from '@react-navigation/native';
 
 const uri = 'https://ak.picdn.net/shutterstock/videos/1060308725/thumb/1.jpg';
-const profilePicture = 'https://randomuser.me/api/portraits/men/34.jpg';
+const profilePicture = 'https://export-download.canva.com/ITLns/DAGFdNITLns/2/0/0001-3790207295471102458.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240517T003825Z&X-Amz-Expires=21908&X-Amz-Signature=2f118ec727c9cf4032c6e8ccd3f9d5de6649db1b886e70eec88a577b37fd01a7&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Dise%25C3%25B1o%2520sin%2520t%25C3%25ADtulo.png&response-expires=Fri%2C%2017%20May%202024%2006%3A43%3A33%20GMT';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -62,7 +62,7 @@ export default function Login() {
             <Image source={{ uri: profilePicture }} style={styles.profilePicture} />
             <View>
               <Text style={{ fontSize: 17, fontWeight: '400', color: 'white' }}>E-mail</Text>
-              <TextInput onChangeText={(text) => setEmail(text)} style={styles.input} placeholder="betomoedano@outlook.com" />
+              <TextInput onChangeText={(text) => setEmail(text)} style={styles.input} placeholder="usuario@gmail.com" />
             </View>
             <View>
               <Text style={{ fontSize: 17, fontWeight: '400', color: 'white' }}>Password</Text>
