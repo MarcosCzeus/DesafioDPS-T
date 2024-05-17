@@ -8,10 +8,11 @@ Documento:
 
 [Proyecto DPS.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/14737051/Proyecto.DPS.pdf)
 
-Manual Usuarios:[SafeRide Manual Usuario.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215047/SafeRide.Manual.Usuario.pdf)
+Manual Usuarios:[Manual de Usuario.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15314819/Manual.de.Usuario.pdf)
 
 
-Manual Tecnico:[Manual Tecnico.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15215046/Manual.Tecnico.pdf)
+Manual Tecnico:[Manual Tecnico.pdf](https://github.com/MarcosCzeus/DesafioDPS-T/files/15344633/Manual.Tecnico.pdf)
+
 
 
 Integrantes:
